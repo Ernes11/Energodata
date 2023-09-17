@@ -12,12 +12,16 @@ body {
 }
 
 button.create_file {
-  font-size: 25px;
   font-weight: 400;
+  font-size: 20px;
   margin-right: 40rem;
-  padding: 12px 40px;
+  padding: 10px 25px;
   border-radius: 15px;
   border: none;
+}
+a {
+  text-decoration: none;
+  color: #444;
 }
 
 div.navbar_right {
@@ -44,8 +48,8 @@ div.navbar_right {
 }
 
 .hero {
-    display: flex;
-    justify-content: center;    
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -62,9 +66,9 @@ div.navbar_right {
 
 /* -------------Accordion------------------- */
 
-.dropdown_menu{
-    width: 900px;
-    z-index: 2;
+.dropdown_menu {
+  width: 900px;
+  z-index: 2;
 }
 .accordion {
   background-color: #eee;
@@ -81,7 +85,6 @@ div.navbar_right {
 .active,
 .accordion:hover {
   background-color: #ccc;
-  
 }
 
 .panel {
@@ -91,8 +94,8 @@ div.navbar_right {
   overflow: hidden;
 }
 
-button.btn_open_table{
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    padding: 10px 30px;
+button.btn_open_table {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 10px 30px;
 }
