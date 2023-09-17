@@ -1,0 +1,15 @@
+.mainpage{
+    margin-top: 40rem;
+    text-align: center;
+}
+
+h1{
+    font-family:Poppins, sans-serif;
+}
+
+
+button.upload_btn{
+    width: 300px;
+    padding: 20px 60px;
+    border-radius: 10px;
+}
