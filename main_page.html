@@ -23,20 +23,27 @@
     <sector class="mainpage">
       <h1>Новый объект</h1>
       <div class="content">
-        <input
-          type="file"
-          id="excelFile"
-          placeholder="Cкачать исполнителный файл"
-          accept=".xls, .xlsx"
-        />
+        <button class="upload_btn" onclick="chooseExcelFile('excelContent')">
+          Cкачать исполнителный файл и исходные данные
+        </button>
 
         <br /><br />
         <button class="upload_btn" onclick="uploadExcelFile()">
           Шаблон отчета ЭО
         </button>
+        <div id="excelContent"></div>
+      </div>
+
+      <div class="mainpage_text">
+        <h6 class="title">Чтобы выгрузить отчет надо</h6>
+        <p class="mainpage_paragraph">
+          1. Открыть файл "Формирование_отчета_v4.3.11" 2. Там выбрать файл
+          "Расчет опросной формы". 3. Выбрать файл "Шаблон отчета ЭО". 4. Нажать
+          "Старт" и выбрать файл "ОФ_ПКТБ" 5. Дождаться завершения работы
+        </p>
       </div>
     </sector>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <script src="js/MainPage.js"></script>
   </body>
 </html>
