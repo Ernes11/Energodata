@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+
+body{
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.navbar_content {
+  text-align: right;
+}
+
+div.navbar_right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+.navbar_title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37.5px;
+  color: rgba(255, 255, 255, 1);
+  padding-right: 10px;
+}
+
+.bg_image {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: -2;
+}
+
+
+.hero{
+    position: relative;
+}
+
+.hero_line{
+    margin-left: 3rem;
+}
+
+
+.hero_bg_image {
+    position: absolute;
+    top: 10rem;
+    right: -2rem;
+    z-index: -2;
+  }
+  
+
+  /* -------------Accordion------------------- */
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
