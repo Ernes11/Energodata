@@ -17,11 +17,20 @@ button.create_file {
   margin-right: 40rem;
   padding: 10px 25px;
   border-radius: 15px;
-  border: none;
+  border-color:rgba(20, 19, 76, 1);
 }
 a {
   text-decoration: none;
   color: #444;
+  &:hover{
+    color: whitesmoke;
+  }
+}
+
+button.create_file:hover{
+  background: rgba(20, 19, 76, 1);
+  border-color: whitesmoke;
+  color: whitesmoke;
 }
 
 div.navbar_right {
@@ -71,20 +80,38 @@ div.navbar_right {
   z-index: 2;
 }
 .accordion {
-  background-color: #eee;
-  color: #444;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.809);
+  color: rgba(20, 23, 50, 1);
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: 1px solid rgba(155, 155, 155, 0.76);
-  border-radius: 10px;
-  transition: 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  box-shadow: rgba(7, 6, 6, 0.499);
+  transition: 0.9s;
+  margin-top: 2rem;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.31px;
+
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #cccccc9a;
 }
 
 .panel {
@@ -92,10 +119,29 @@ div.navbar_right {
   background-color: white;
   display: none;
   overflow: hidden;
+  height: auto;
+  border-radius: 15px;
 }
 
+
+
 button.btn_open_table {
+  background-color: transparent;
+  margin-left: 39rem;
   margin-bottom: 2rem;
   border-radius: 10px;
-  padding: 10px 30px;
+  padding: 10px 40px;
+  border-color:rgba(20, 19, 76, 1);
+  font-weight: 300;
 }
+button.btn_open_table:hover {
+ background: rgba(20, 19, 76, 1);
+ border-color: whitesmoke;
+ color: whitesmoke;
+}
+
+
+
+
+
+
