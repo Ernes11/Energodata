@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
 
 * {
   margin: 0 auto;
@@ -15,7 +14,6 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(137, 136, 199, 1);
-  
 }
 .form {
   position: absolute;
@@ -27,11 +25,9 @@
   background: #fff;
   margin-top: 10rem;
   margin-bottom: 10rem;
-  
 }
 .form.signup {
   border-radius: 10px;
-  
 }
 
 header {
@@ -60,7 +56,7 @@ header {
 .field input {
   outline: none;
   padding: 0 15px;
-  border: 1px solid rgba(11, 8, 8, 1);;
+  border: 1px solid rgba(11, 8, 8, 1);
 }
 .field input:focus {
   border-bottom-width: 2px;
@@ -76,21 +72,48 @@ header {
   padding: 5px;
 }
 
+.form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-.checkbox_field{
+.form__message--success {
+  color: #46ac3f;
+}
+
+.form__message--error {
+  color: #cc3333;
+}
+
+.form__input--error {
+  color: #cc3333;
+  border-color: #cc3333;
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #cc3333;
+}
+
+.checkbox_field {
   padding-top: 10px;
 }
 
-.field button {
-  color: #fff;
-  background-color: rgba(20, 34, 56, 0.7);
+.field button  {
+  color: rgba(20, 34, 56, 0.952);
   transition: all 0.3s ease;
   cursor: pointer;
   font-weight: 600;
+  
 }
+
+
 .field button:hover {
+color: whitesmoke;
   background-color: rgba(20, 34, 56, 0.952);
 }
+
 .form-link {
   text-align: center;
   margin-top: 10px;
@@ -102,21 +125,18 @@ header {
   color: #232836;
 }
 .form a {
-  color: #0171d3;
+  color: #0a63bbb0;
   text-decoration: none;
 }
 .form-content a:hover {
   text-decoration: underline;
 }
 
-
-.media-options{
-    width: 230px;
-    margin-left: 140px;
-
+.media-options {
+  width: 230px;
+  margin-left: 140px;
 }
 .media-options a {
-   
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +153,7 @@ img.google-img {
   width: 20px;
   object-fit: cover;
 }
-a.google { 
+a.google {
   border: 1px solid rgba(11, 8, 8, 1);
 }
 a.google span {

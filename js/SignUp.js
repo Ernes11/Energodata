@@ -1,23 +1,22 @@
-const forms = document.querySelector(".forms");
-const pwShowHide = document.querySelectorAll(".eye-icon");
-const links = document.querySelectorAll(".link");
 
-pwShowHide.forEach(eyeIcon => {
-eyeIcon.addEventListener("click", () => {
-  let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-  
-  pwFields.forEach(password => {
-      if(password.type === "password"){
-          password.type = "text";
-          eyeIcon.classList.replace("bx-hide", "bx-show");
-          return;
-      }
-      password.type = "password";
-      eyeIcon.classList.replace("bx-show", "bx-hide");
-  })
-  
-})
-})      
+    // The following code for sign up page///////
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must be at least 10 characters in length");
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        });
+    });
+
+
+
+
+
 
 // links.forEach(link => {
 // link.addEventListener("click", e => {
