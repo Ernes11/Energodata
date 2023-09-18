@@ -5,16 +5,19 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .navbar_content {
+  position: relative;
   text-align: right;
 }
 
 button.create_file {
   font-weight: 400;
   font-size: 20px;
-  margin-right: 40rem;
+  margin-right: 37.5rem;
   padding: 10px 25px;
   border-radius: 15px;
   border-color:rgba(20, 19, 76, 1);
@@ -49,13 +52,24 @@ div.navbar_right {
   padding-right: 10px;
 }
 
-.bg_image {
+.bg_image img{
   position: absolute;
-  top: 1rem;
+  top: 0rem;
   right: 2rem;
   z-index: -2;
 }
-
+.bg_image2 img{
+  position: absolute;
+  top: 0rem;
+  right: 3.5rem;
+  z-index: -3;
+}
+.bg_image3 img{
+  position: absolute;
+  top: 0rem;
+  right: 4.5rem;
+  z-index: -4;
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -63,7 +77,13 @@ div.navbar_right {
 }
 
 .hero_line {
-  margin-right: 5rem;
+  margin-right: 8rem;
+
+}
+
+.hero line img{
+  position: absolute;
+  top: -8rem;
 }
 
 .hero_bg_image {
@@ -78,6 +98,7 @@ div.navbar_right {
 .dropdown_menu {
   width: 900px;
   z-index: 2;
+  
 }
 .accordion {
   height: 90px;
@@ -98,15 +119,15 @@ div.navbar_right {
 
 }
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
+  content: '\2295'; /* Unicode character for "plus" sign (+) */
+  font-size: 30px;
+  color: rgba(20, 23, 50, 1);
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2296"; /* Unicode character for "minus" sign (-) */
 }
 
 .active,
