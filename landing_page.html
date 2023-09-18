@@ -21,16 +21,16 @@
     <title>Energy-Data</title>
   </head>
   <body>
-    <!------------------- Header of Page ------------------->
+    <!------------------------------ HEADER OF PAGE --------------------------->
     <section class="bg_img">
       <header>
         <div class="logo">
           <img src="./images/logo (Traced).png" alt="logo" />
         </div>
         <nav class="" navbar>
-          <a href="#">О нас</a>
-          <a href="#">Этапы</a>
-          <a href="#">Контакты</a>
+          <a href="#about">О нас</a>
+          <a href="#stage">Этапы</a>
+          <a href="#contact">Контакты</a>
         </nav>
         <div class="btns-group">
           <button class="btn_signup"><a href="./signup_page.html" ">Создать</a></button>
@@ -45,7 +45,10 @@
       </div>
     </section>
 
-    <section class="about_us">
+
+
+    <!--------------------------------ABOUT US----------------------------------->
+    <section id ="about"class="about_us">
         <div class="container">
             <!-- Left side with images -->
             <div class="image_group">
@@ -66,7 +69,9 @@
             </div>
     </section>
 
-    <section class="steps">
+
+    <!-- -----------------------------STAGE------------------------------- -->
+    <section id="stage" class="steps">
         <h1 class="steps_title">Этапы работы</h1>
          <div class="container">
             <div class="blue_box"></div>
@@ -86,10 +91,8 @@
                 <img src="./images/steps_img.png" alt="">
               </div>                 
           </div>
-    </section>
 
-
-    <section class="steps_2">           
+    <div class="steps_2">           
         <div class="stp_2_container">
             <div class="bl-rectangle-2"></div>
             <div class="steps_text-2">
@@ -98,9 +101,9 @@
                   lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.</h6>             
            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="steps_3">           
+    <div class="steps_3">           
         <div class="stp_2_container">
     
             <div class="steps_text-3">
@@ -114,16 +117,16 @@
             <img src="./images/трансформатор.png" alt="">
            </div>
         </div>
-    </section>
-    <section class="steps_4">
+    </div>
+    <div class="steps_4">
       <div class="steps_4_text">
         <h2 class="steps_4_title">Формирование отчета</h2>
         <p class="steps_4_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Sed efficitur, lectus et facilisis placerat, 
           magna mauris porttitor tortor, a auctor est felis ut nisl.</p>
       </div>
-    </section>
-    <section class="steps_5">
+    </div>
+    <div class="steps_5">
       <div class="bl_box_5"></div>
       <div class="steps_5_text">
         <h2 class="steps_5_title">Оформление паспорта</h2>
@@ -133,8 +136,12 @@
       <div class="steps_5_img">
         <img src="./images/Energy photo.png" alt="">
       </div>      
-    </section>
-    <footer class="contact">
+    </div>
+  </section>
+
+
+  <!-- -----------------------------------FOOTER------------------------------------->
+    <footer id="contact" class="contact">
       <div class="container">
         <div class="footer_items">
           <div class="icons_items">
@@ -149,13 +156,15 @@
             </div>
          
             <ul class="footer_links">
-              <li>О нас</li>
-              <li>Этапы</li>
-              <li>Контакты</li>
+              <li><a href="about">О нас</a></li>
+              <li><a href="stage">Этапы</a></li>
+              <li> <a href="contact">Контакты</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="./js/LandingPage.js"></script>
   </body>
 </html>
