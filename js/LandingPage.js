@@ -1,28 +1,4 @@
 
-// ===================Js code of Scrolling===================//
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const links = document.querySelectorAll('a[href^="#"]');
-    
-//     for (const link of links) {
-//         link.addEventListener("click", scrollToSection);
-//     }
-    
-//     function scrollToSection(e) {
-//         e.preventDefault();
-//         const targetId = this.getAttribute("href").substring(1);
-//         const targetSection = document.getElementById(targetId);
-        
-//         if (targetSection) {
-//             const offset = targetSection.offsetTop;
-//             window.scrollTo({
-//                 top: offset,
-//                 behavior: "smooth"
-//             });
-//         }
-//     }
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll('a[href^="#"]');
     
