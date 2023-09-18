@@ -111,7 +111,7 @@ header {
 
 
 .field button:hover {
-color: rgb(252, 252, 252);
+  color: rgb(252, 252, 252);
   background-color: rgba(20, 34, 56, 0.952);
 }
 
@@ -125,12 +125,19 @@ color: rgb(252, 252, 252);
   font-weight: 400;
   color: #232836;
 }
-.form a {
-  color: #ece6e6b0;
+
+.create_btn{
   text-decoration: none;
+  color:rgba(20, 34, 56, 0.952) ;
+  
 }
-.form-content a:hover {
-  text-decoration: underline;
+
+.create_btn:hover{
+  color: rgb(252, 252, 252);
+  background-color: rgba(20, 34, 56, 0.952);
+}
+a.link{
+color: blue;
 }
 
 .media-options {
