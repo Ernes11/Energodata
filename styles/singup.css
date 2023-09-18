@@ -105,12 +105,13 @@ header {
   transition: all 0.3s ease;
   cursor: pointer;
   font-weight: 600;
+  background-color: #b4b4b4;
   
 }
 
 
 .field button:hover {
-color: whitesmoke;
+color: rgb(252, 252, 252);
   background-color: rgba(20, 34, 56, 0.952);
 }
 
@@ -125,7 +126,7 @@ color: whitesmoke;
   color: #232836;
 }
 .form a {
-  color: #0a63bbb0;
+  color: #ece6e6b0;
   text-decoration: none;
 }
 .form-content a:hover {

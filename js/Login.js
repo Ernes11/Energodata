@@ -59,9 +59,9 @@ pwShowHide.forEach((eyeIcon) => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const emailInput = document.querySelector("#email");
-    const passwordInput = document.getElementById("#password");
-    const rememberCheckbox = document.getElementById("#remember");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const rememberCheckbox = document.getElementById("remember");
   
     // Check if there is saved data in localStorage
     const savedEmail = localStorage.getItem("email");
